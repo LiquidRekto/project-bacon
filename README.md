@@ -9,8 +9,7 @@
 
 > NOTE: If you don't have [Node.js](https://nodejs.org/) installed, make sure to install it before proceed!
 
-
-Since the project is powered by [Electron](https://www.electronjs.org/), [TailwindCSS](https://tailwindcss.com/docs/installation) and [SocketIO](https://www.npmjs.com/package/socket.io), please make sure that you have installed all of them **(via npm)** before you build it.
+After downloading the project source, go to the project directory and run `npm install` to install all reuqired modules.
 
 **Building the app**
 
