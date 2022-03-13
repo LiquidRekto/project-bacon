@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/dist/output.css" rel="stylesheet">
+  </head>
+  <body class="text-center font-def overflow-hidden select-none">
+    <div id="dashboard-menu" class="text-left hidden absolute w-1/4 h-full bg-bc_box_purple_bg">
+      <button id="db-close" class="px-3 py-2">
+        <img class="h-4" width="18" height="20" src="assets/svg/dashboard-closemenu.svg" />
+      </button> </br>
+      <div class="ml-3 mt-5">
+        <p class="font-def font-bold text-4xl text-white"> 
+          Dashboard
+        </p>
+        <button value="nav-home" class="nav-db text-button my-0"> 
+          Home
+        </button> </br> </br>
+        <button value="nav-chilldemo" class="nav-db text-button my-0"> 
+          Chill Test Demo
+        </button> </br>
+        <button value="nav-strictdemo" class="nav-db text-button my-0"> 
+          Strict Test Demo
+        </button> </br> </br>
+        <button value="nav-loadtest" class="nav-db text-button my-0"> 
+          Load a Quiz/Test
+        </button> 
+      </div>
+      
+    </div>
+    <div style="-webkit-app-region: drag" id="nav-bar" class="bg-gray-200 h-8">
+      <button id="nav-menubtn" class="px-3 py-2 hover:bg-gray-300 float-left">
+        <img class="h-4" width="18" height="20" src="assets/svg/navbtn-menubtn.svg" />
+      </button>
+      <div style="font-size: 0" class="float-right">
+        <button id="nav-minimizebtn" class="px-5 py-2 hover:bg-gray-300">
+          <img class="h-4" width="12" height="20" src="assets/svg/navbtn-minimize.svg" />
+        </button>
+        <button id="nav-maximizebtn" class="px-5 py-2 hover:bg-gray-300">
+          <img class="h-4" width="12" height="20" src="assets/svg/navbtn-maximize.svg" />
+        </button>
+        <button id="nav-closebtn" class="px-5 py-2 hover:bg-gray-300">
+          <img class="h-4" width="12" height="20" src="assets/svg/navbtn-close.svg" />
+        </button>
+      </div>
+    </div>
+
+    
+    <!---
+    <img class="inline-block m-12 scale-75" src="assets/svg/large-green-tick.svg" alt="what the fuck?"/>
+    <script src="js/socket.io.js"></script>
+    <script src="js/views/base.js"></script>
+    <p class="text-5xl font-bold text-bc_box_purple_bg"> Wa-zaah! </p>
+    <p class="text-3xl text-purple-400 mb-20"> You have finished the test! </p>  
+    <button class="text-gray-700 hover:bg-bc_box_plain_bg_hv bg-bc_box_plain_bg border-bc_box_plain_bd button-def"> See Results </button>  </br>
+    <button class="text-white hover:bg-bc_box_red_bg_hv bg-bc_box_red_bg border-bc_box_red_bd button-def"> Exit </button>
+    -->
+
+    <iframe id="content-frame" src="views/components/loadtest.html" class="w-full"></iframe>
+    <script src="js/socket.io.js"></script>
+    <script src="js/views/base.js"></script>
+  </body>
+</html>

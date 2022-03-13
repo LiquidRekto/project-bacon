@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+
+/* HK Grotesk Font Area */
+
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('../../assets/fonts/HKGrotesk-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+
+/* HK Grotesk Font Area */
+
+@tailwind utilities;
+
+@layer components {
+    .button-def {
+        @apply rounded-2xl font-def font-bold border text-xl py-2 px-4 mt-5 w-44 drop-shadow-bc_buttons;
+    }
+
+    .text-button {
+        @apply border-0 bg-transparent font-def font-medium text-xl text-white;
+    }
+
+    .lt-import-area-highlighted {
+        @apply w-5/6 h-3/5 border-solid rounded-3xl bg-purple-200 border-bc_box_purple_bg border-2;
+    }
+
+    .lt-import-area {
+        @apply w-5/6 h-3/5 border-dashed rounded-3xl bg-gray-100 border-gray-400 border-2;
+    }
+}
+
+#nav-bar {
+    -webkit-app-region: drag
+}
+
+#nav-bar > * {
+    -webkit-app-region: no-drag
+}
