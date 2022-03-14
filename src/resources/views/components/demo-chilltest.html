@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- CAUTION: THIS IS USED FOR IFRAME STUFF!-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/dist/output.css" rel="stylesheet">
+  </head>
+  <body class="text-center font-def overflow-hidden select-none">
+
+    <div class="mt-32 h-40 w-1/2 inline-block"> <!-- FULL OVERVIEW -->
+        <div class="w-full inline-block"> <!-- QUESTION NUMBER AND TIME-->
+            <p class="align-middle font-def float-left font-bold text-gray-700 text-3xl">Question <span id="q-number">0</span><span class="text-lg text-gray-300"> of <span id="q-total">0</span></span></p>
+            <div class="align-middle float-right">       
+                <img class="mx-2 float-left" src="../../assets/svg/small-timer.svg" width="24" height="24" />
+                <label id="timer-text" class="font-def font-bold my-8 text-2xl">--:--:--</label>
+            </div>
+            
+        </div>
+        <div class="w-full p-6 bg-bc_box_plain_bg border-bc_box_plain_bd border-1 rounded-2xl drop-shadow-bc_box"> <!-- QUESTION AREA-->
+            <div class="w-full p-6 shadow-bc_inner_box h-40 bg-white border-bc_box_plain_bd border-1 rounded-2xl">
+                <p id="q-text" class="font-def text-left font-semibold text-2xl text-bc_box_purple_bg"> Choose the word whose underlined part is pronounced differently from the others. </p>
+            </div>
+            <div class="sticky w-full mt-6 h-36 grid grid-rows-2 grid-flow-col gap-2">
+                <div data-isclicked="false" tabindex="1" name="answer_box_A" class="answer-box cursor-pointer bg-[#fdfdfd] border text-left p-2 rounded-lg w-full drop-shadow-bc_box">
+                    <div data-name="letter-box" class="ml-px text-center float-left bg-white border rounded-full content-center w-12 h-12"> 
+                        <p class="leading-[48px] font-def font-bold text-2xl"> A </p>
+                    </div>
+                    <label data-name="answer-label" class="ml-2 leading-[48px] font-semibold text-xl"> ar<u>ou</u>nd </label>
+                </div>
+                <div data-isclicked="false" tabindex="1" name="answer_box_A" class="answer-box cursor-pointer bg-[#fdfdfd] border text-left p-2 rounded-lg w-full drop-shadow-bc_box">
+                    <div data-name="letter-box" class="ml-px text-center float-left bg-white border rounded-full content-center w-12 h-12"> 
+                        <p class="leading-[48px] font-def font-bold text-2xl"> C </p>
+                    </div>
+                    <label data-name="answer-label" class="ml-2 leading-[48px] font-semibold text-xl"> r<u>ou</u>nd </label>
+                </div>
+                <div data-isclicked="false" tabindex="1" name="answer_box_A" class="answer-box cursor-pointer bg-[#fdfdfd] border text-left p-2 rounded-lg w-full drop-shadow-bc_box">
+                    <div data-name="letter-box" class="ml-px text-center float-left bg-white border rounded-full content-center w-12 h-12"> 
+                        <p class="leading-[48px] font-def font-bold text-2xl"> B </p>
+                    </div>
+                    <label data-name="answer-label" class="ml-2 leading-[48px] font-semibold text-xl"> sh<u>ou</u>ld </label>
+                </div>
+                <div data-isclicked="false" tabindex="1" name="answer_box_A" class="answer-box cursor-pointer bg-[#fdfdfd] border text-left p-2 rounded-lg w-full drop-shadow-bc_box">
+                    <div data-name="letter-box" class="ml-px text-center float-left bg-white border rounded-full content-center w-12 h-12"> 
+                        <p class="leading-[48px] font-def font-bold text-2xl"> D </p>
+                    </div>
+                    <label data-name="answer-label" class="ml-2 leading-[48px] font-semibold text-xl"> h<u>ou</u>nd </label>
+                </div>
+                
+            </div>
+        </div>
+        <div> <!-- BUTTON TRAY-->
+            <button class="float-left text-gray-700 hover:bg-bc_box_plain_bg_hv bg-bc_box_plain_bg border-bc_box_plain_bd button-def-sm"> Previous </button>
+            <button class="float-right text-white hover:bg-bc_box_purple_bg_hv bg-bc_box_purple_bg border-bc_box_purple_bd button-def-sm"> Next </button>
+        </div>
+    </div>
+
+    
+    <script src="../../js/socket.io.js"></script>
+    <script src="../../js/views/demo-chilltest.js"></script>
+
+    
+
+
+    
+  </body>
+</html>

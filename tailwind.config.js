@@ -40,7 +40,11 @@ module.exports = {
 
       },
       dropShadow: {
-        'bc_buttons': '3px 3px 4px rgba(0,0,0,0.45)'
+        'bc_buttons': '3px 3px 4px rgba(0,0,0,0.45)',
+        'bc_box': '2px 2px 2px rgba(0,0,0,0.30)'
+      },
+      boxShadow: {
+        'bc_inner_box': 'inset 0px 2px 4px 0px rgba(0,0,0,0.45)'
       }
     },
   },

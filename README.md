@@ -1,9 +1,14 @@
 # About
-### A Test/Quiz Management Software (Codenamed: BACON) for those who wants to review for their upcoming exams, or simply just having fun
+### A Test/Quiz Management Software **(Codenamed: BACON)** for those who wants to review for their upcoming exams, or simply just having fun
 
 ![example-bacon](https://user-images.githubusercontent.com/46742676/158029860-676455ff-9e9f-4c9c-aa31-f616c4f49a92.png)
 
 *(The application concept image. May be subjected for further changes.)*
+
+# Releases
+
+For those who don't really want to build from the source, you can try our released versions.
+*Coming soon in some time in the future*
 
 # Building the project
 

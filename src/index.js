@@ -43,7 +43,8 @@ const createWindow = () => {
     titleBarStyle: 'hidden',
     webPreferences: {
       webSecurity: false,
-      webgl: true
+      webgl: true,
+      devTools: !app.isPackaged
     }
   });
 
@@ -82,6 +83,8 @@ app.on('activate', () => {
 io.on('connection', (socket) => {
    console.log('A device has connected!');
 
+  // Basic Window Controls
+
    socket.on('ev-minimize', () => {
     CURRENT_WIN.minimize();
    });
@@ -102,6 +105,9 @@ io.on('connection', (socket) => {
     var bounds = CURRENT_WIN.getBounds();
     socket.emit('screen-change-reply', {width: bounds.width, height: bounds.height});
   });
+
+  //
+
 });
 
 
